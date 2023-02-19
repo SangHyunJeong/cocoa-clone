@@ -8,18 +8,18 @@
     <title>Welcome to Kokoa talk</title>
 </head>
 <body>
-    <div id="status-bar">   
+    <div class="status-bar">   
         <div class="status-bar__column">
             <span>No Service</span>
-            <i class="fas fa-wifi"></i>            
+            <i class="fa-solid fa-wifi"></i>          
         </div>
         <div class="status-bar__column">
             <span>18:43</span>
         </div>
         <div class="status-bar__column">
             <span>110%</span>
-            <i class="fas fa-battery-full"></i>
-            <i class="fas fa-bolt"></i>
+            <i class="fa-solid fa-battery-full fa-2x"></i>
+            <i class="fa-solid fa-bolt"></i>
         </div>
     </div>
 
@@ -28,9 +28,9 @@
         <p class="welcome-header__text">If you have a Kokoa Account, log in with your email or phone number.</p>
     </header>
 
-    <form id="login-form">
-        <input type="text" placeholder="Email or phone number" />
-        <input type="password" placeholder="Password"/>
+    <form action="friends.html" method="get" id="login-form">
+        <input name="username" type="text" placeholder="Email or phone number" />
+        <input name="password" type="password" placeholder="Password"/>
         <input type="submit" value="Log In" />
         <input type="submit" value="Sign Up" />
         <a href="#">Find Kokoa Account or Password</a>     
@@ -38,8 +38,7 @@
 
     
 
-    <script src="https://kit.fontawesome.com/6478f529f2.js"
-    crossorigin="anonymous"
+    <script src="https://kit.fontawesome.com/183a3e17a4.js" crossorigin="anonymous"
     ></script>
 </body>
 </html>
