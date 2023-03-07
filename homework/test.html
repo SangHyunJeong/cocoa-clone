@@ -4,99 +4,111 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <title>repl.it</title>
+  <title>homework</title>
   <style>
     body {
+      background-color: #6BBCBE;
+    }
+
+    .dots-container {
       display: flex;
       justify-content: center;
       align-items: center;
-      height: 75vh;
-      flex-wrap: wrap;
-      background-color: #f5f5f5;
+      height: 300px;
+      animation: rollingdots 2s ease-in-out infinite;
     }
-    
-    #center {
-      background-color: #f5f5f5;
-      width: 700px;
-      height: 900px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-wrap: wrap;
-    }
-    
-    #title {
-      font-size: 40px;
-      width: 1000px;
-      justify-content: center;
-      display: flex;
-      margin-bottom: 30px;
-    }
-    
-    .description {
-      width: 220px;
-      height: 130px;
+
+    span {
       background-color: white;
-      position: relative;
-      top: 20px;
+      border-radius: 50%;
+      height: 10px;
+      width: 10px;
+      display: inline-block;
+      margin: 0 10px;
     }
-    
-    .colorboxes {
+
+    @keyframes rollingdots {
+      0% {
+        transform: rotateZ(0);
+      }
+      50% {
+        transform: rotateZ(180deg);
+      }
+      100% {
+        transform: rotateZ(360deg);
+      }
+    }
+
+    .bars-container {
       display: flex;
-      width: 220px;
-      height: 380px;
-      border: 5px solid white;
-      margin: 15px;
+      justify-content: center;
+      align-items: center;
+      margin-top: 20px;
     }
-    
-    div.colorboxes:nth-child(1) {
-      background-color: tomato;
+
+    .bar {
+  width: 10px;
+  height: 40px;
+  background-color: white;
+  display: inline-block;
+  margin-right: 5px;
+  transform-origin: center;
+  animation: barwave 1s ease-in-out infinite;
+  
+}
+
+
+    @keyframes barwave {
+      0% {
+        transform: scaleY(1);
+      }
+      25% {
+        transform: scaleY(1.75);
+      }
+      50% {
+        transform: scaleY(1);
+      }
+      100% {
+        transform: scaleY(1);
+      }
     }
-    
-    div.colorboxes:nth-child(2) {
-      background-color: teal;
-    }
-    
-    div.colorboxes:nth-child(3) {
-      background-color: burlywood;
-    }
-    
-    div.colorboxes:nth-child(4) {
-      background-color: thistle;
-    }
+
+    .bar:nth-child(1) {
+  animation-delay: 0.1s;
+}
+
+.bar:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.bar:nth-child(3) {
+  animation-delay: 0.3s;
+}
+
+.bar:nth-child(4) {
+  animation-delay: 0.4s;
+}
+
+.bar:nth-child(5) {
+  animation-delay: 0.5s;
+}
   </style>
+
 </head>
 
 <body>
-  <div id="title">
-    The Best Colors
+  <div class="dots-container">
+    <span></span>
+    <span></span>
+    <span></span>
   </div>
 
-  <div id="center">
-    <div class="colorboxes">
-      <div class="description">
-        <h2>Tomato</h2>
-        <h4>#FF6347</h4>
-      </div>
-    </div>
-    <div class="colorboxes">
-      <div class="description">
-        <h2>Teal</h2>
-        <h4>#008080</h4>
-      </div>
-    </div>
-    <div class="colorboxes">
-      <div class="description">
-        <h2>Burlywood</h2>
-        <h4>#DEB887</h4>
-      </div>
-    </div>
-    <div class="colorboxes">
-      <div class="description">
-        <h2>Thistle</h2>
-        <h4>#D7BFD7</h4>
-      </div>
-    </div>
+  <div class="bars-container">
+    <div class="bar"></div>
+    <div class="bar"></div>
+    <div class="bar"></div>
+    <div class="bar"></div>
+    <div class="bar"></div>
   </div>
 </body>
 
