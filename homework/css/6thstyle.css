@@ -1,0 +1,170 @@
+body{
+    margin: 0;
+}
+.topbar{
+    width: 340px;
+    height: 100px;
+    background-color: #FFCD33;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    font-size: 21px;
+    position: relative;
+    z-index: 1;
+}
+.topbar i{
+    padding: 10px;
+}
+
+.searchingbar{
+    width: 310px;
+    height: 50px;
+    border-radius: 20px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: rgba(0,0,0,0.3);
+    position: relative;
+    top: -25px;
+    left: 15px;
+    z-index: 2;
+    box-shadow: 0 5px 5px -5px rgba(0, 0, 0, 0.5);
+}
+.searchingbar div{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.main{
+    margin-left: 10px;
+}
+.top{
+    height: 200px;
+    width: 330px;
+}
+
+.top--title{
+    font-size: 23px;
+    font-weight: 600;
+}
+.top--container{
+    display: flex;
+}
+.top--picture img{
+    width: 106px;
+    height: 163px;
+    border-radius: 5px;
+    display: flex;
+    margin-top: 5px;
+}
+.top--description,.bot--description{
+    display: flex;
+    margin-left: 15px;
+    margin-top: 5px;
+    flex-direction: column;
+}
+
+.top--description .title ,.bot--description .author {
+    font-size: 20px;
+  }
+.top--description .author ,.bot--description .author {
+    margin-top: 5px;
+    font-size: 12px;
+    color: rgba(0,0,0,0.4);
+  }
+.top--description .stars i{
+    margin-top: 5px;
+    color: #FFCD33;
+}
+.top--description .button{
+   display:flex;
+   justify-content: space-around;
+}  
+
+.top--description .button .b1,.b2{
+    width: 80px;
+    height: 28px;
+    border-radius: 5px; 
+    margin-top: 5px;
+    background-color: rgba(0,0,0,0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.top--description .bookmark{
+    display: flex;
+    justify-content: space-around;
+}
+.top--description .bookmark i{
+    background-color: #FFCD33;
+    margin-top: 10px;
+    margin-right: 50px;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.top--description .booknow{
+    margin-top: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    color: white;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.mid{
+    height: 200px;
+    width: 330px;
+    
+}
+.mid--title{
+    font-size: 23px;
+    font-weight: 600;
+}
+.mid--container{
+    display: flex;
+    margin-top: 10px;
+    overflow-x: hidden;
+}
+.mid--container i{
+    color: #FFCD33;
+    font-size: 10px;
+}
+.mid--container img{
+    width: 70px;
+    height: 110px;
+    border-radius: 5px;
+}
+.mid--container .book1,.book2,.book3,.book4{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 27px;
+}
+
+.bot{
+    height: 200px;
+    width: 330px;
+    
+}
+.bot--title{
+    font-size: 23px;
+    font-weight: 600;
+}
+
+.bot--container{
+    display: flex;
+}
+.bot--picture img{
+    width: 107px;
+    height: 130px;
+    border-radius: 5px;
+    margin-top: 5px;
+}
