@@ -1,0 +1,212 @@
+body{
+    display: flex;
+    background-color: #F7F7F7;
+    font-family: nunito;
+}
+.leftbox, .rightbox{
+    width: 360px;
+    height: 780px;
+    margin: 50px;
+    background-color: white;
+    border-radius: 40px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    margin-top: 10px;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+.info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 200px;
+    flex-direction: column;
+}
+.info img{
+    border-radius: 50%;
+    height: 90px;
+    width: 90px;
+    box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
+}
+.info--artist{
+    font-size: 28px;
+    font-weight: bold;
+}
+.info--genre{
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.4);
+    font-weight: 600;
+}
+.buttons{
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.buttons--shuffle{
+    height: 43px;
+    width: 120px;
+    background-color: black;
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.buttons--likes{
+    height: 43px;
+    width: 120px;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 20px;
+    box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.songlist{
+    height: 294px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.songlist--1st,.songlist--2nd,.songlist--3rd,.songlist--4th{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+}
+.songlist img{
+    width: 50px;
+    height: 50px;
+    border-radius: 12px;
+}
+.songlist--1st_info_description1,.songlist--2nd_info_description1,.songlist--3rd_info_description1,.songlist--4th_info_description1{
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.3);
+    font-weight: bold;
+}
+.songlist--1st_info_description2,.songlist--2nd_info_description2,.songlist--3rd_info_description2,.songlist--4th_info_description2{
+    font-size: 18px;
+    font-weight: bold;
+}
+.songlist--4th_albomcover_inside{
+    position: relative;
+}
+.songlist--4th_albomcover_inside_icon{
+    position: absolute;
+    z-index: 1;
+    top:10px;
+    left:10px;
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 25px;
+}
+.ctrlbox{
+    height: 70px;
+    width: 330px;
+    border-radius: 35px;
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 15px;
+    margin-left: 15px;
+    box-shadow: 0 20px 20px -20px rgba(0, 0, 0, 0.5);
+}
+.ctrlbox--info_description1{
+    color: gray;
+    font-size: 16px
+}
+.ctrlbox--info_description2{
+    color: white;
+    font-size: 18px;
+}
+.ctrlbox--btn{
+    color: white;
+    width: 100px;
+    font-size:20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.info2{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    height: 470px;
+}
+.info2--description1{
+    font-size: 30px;
+    font-weight: bold;
+}
+.info2--description2{
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.4);
+    font-weight: bold;
+}
+.info2--albumphoto img{
+    width: 260px;
+    height: 260px;
+    box-shadow: 0 20px 20px -20px rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    margin-bottom: 40px;
+}
+.progressbar{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 78px;
+}
+.progressbar--time{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 5px;
+    align-items: center;
+}
+.progressbar--bar{
+    width: 80%;
+    height: 5px;
+    background-color: rgba(0, 0, 0, 0.3);
+    margin-left: 10%;
+}
+.progressbar--bar::-webkit-slider-thumb{
+    width: 10px;
+    height: 10px;
+    cursor: pointer;
+}
+.ctrlbox2{
+    height: 170px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: 25px;
+}
+.ctrlbox2--again,.ctrlbox2--shuffle{
+    color: rgba(0,0,0,0.3);
+}
+.ctrlbox2--play{
+    background-color: black;
+    color: white;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 20px 20px -20px rgba(0, 0, 0, 0.5);
+}
